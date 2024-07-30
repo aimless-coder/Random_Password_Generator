@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+    --back-ground: #01204E;
+    --btn-primary: #028391;
+    --text1: #F6DCAC;
+    --text2: #EE4E4E;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--back-ground);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 150px;
+}
+
+.title{
+    max-width: 450px;
+    border-bottom: 5px solid var(--text2);
+    padding-bottom: 10px;
+}
+
+.title h1 {
+    font-size: 36px;
+    color: var(--text1);
+}
+
+.title h1 span{
+    color: var(--text2);
+}
+
+.password-render{
+    height: 60px;
+    max-width: 450px;
+    background: var(--text1);
+    margin: 30px 0px;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-password{
+    width: 100%;
+    height: 100%;
+    max-width: 370px;
+    flex: 1;
+    color: var(--back-ground);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.password-render img{
+    flex: 0;
+    height: 36px;
+    cursor: pointer;
+}
+
+.range-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text1);
+    font-size: 18px;
+    letter-spacing: 0.3px;
+
+}
+
+.range-box label span{
+    color: var(--text2);
+    font-weight: 600;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    height: 5px;
+    max-width: 450px;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    height: 30px;
+    width: 30px;
+    background-color: var(--text2);
+    border: none;
+    border-radius: 30px;
+}
+
+.check-box{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-control{
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text1);
+    font-size: 18px;
+    letter-spacing: 0.3px;
+
+}
+
+input[type="checkbox"]{
+    accent-color: var(--text2);
+    cursor: pointer;
+}
+
+.btn-box{
+    max-width: 450px;
+    padding: 20px 0px;
+}
+
+#genBtn{
+    height: 60px;
+    width: 100%;
+    background: var(--btn-primary);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#genBtn:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in;
+}
+
+#genBtn img{
+    height: 26px;
+}
+
+@media (max-width: 700px){
+    .container{
+        padding: 30px;
+    }
+
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .password-render{
+        height: 40px;
+        padding: 5px;
+
+    }
+    
+    .show-password{
+        font-size: 18px;
+    }
+    
+    .password-render img{
+        height: 24px;
+    }
+
+    .range-box{
+        font-size: 16px;    
+    }
+    
+    input[type="range"]{    
+        height: 2px;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb{    
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+    }
+    
+    .form-control{
+        font-size: 16px;    
+    }
+    
+    #genBtn{
+        height: 50px;
+        font-size: 18px;
+        gap: 10px;
+    }
+    
+    #genBtn img{
+        height: 24px;
+    }
+
+}
+
+
+
+
