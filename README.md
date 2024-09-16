@@ -2,6 +2,8 @@
 
 A simple web application to generate random passwords based on user-selected criteria such as length, inclusion of uppercase letters, numbers, and symbols. This tool helps users create strong and secure passwords for their online accounts.
 
+To view this project, visit [here](https://aimless-coder.github.io/Random_Password_Generator/)
+
 ## Table of Contents
 
 - [Demo](#demo)
